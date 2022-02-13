@@ -3,18 +3,16 @@ import React from 'react';
 import Layout from '../components/Layout';
 import { PAGES } from '../constants';
 
-export default () => {
+const C = () => {
   return (
     <>
       <Layout>
         <section class="section">
           <div className="container">
-            <h1 class="title">
-              {PAGES.aboutUs.communityEconomicDevelopmentStrategy.title}
-            </h1>
+            <h1 class="title">{PAGES.aboutUs.communityEconomicDevelopmentStrategy.title}</h1>
             <h2 class="subtitle">
-              A simple container to divide your page into{' '}
-              <strong>sections</strong>, like the one you're currently reading.
+              A simple container to divide your page into <strong>sections</strong>, like the one
+              you're currently reading.
             </h2>
           </div>
         </section>
@@ -22,3 +20,5 @@ export default () => {
     </>
   );
 };
+
+export default C;

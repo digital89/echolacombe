@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default () => {
+const C = () => {
   return (
     <>
       <footer className="footer">
@@ -10,27 +10,27 @@ export default () => {
               <div class="column">
                 <h4>Helpful links:</h4>
                 <div>
-                  <a href="https://www.lacombe.ca" target="_blank">
+                  <a href="https://www.lacombe.ca" rel="noreferrer" target="_blank">
                     City of Lacombe
                   </a>
                 </div>
                 <div>
-                  <a href="https://www.lacombechamber.ca" target="_blank">
+                  <a href="https://www.lacombechamber.ca" rel="noreferrer" target="_blank">
                     Lacombe Chamber of Commerce
                   </a>
                 </div>
                 <div>
-                  <a href="https://www.burmanu.ca" target="_blank">
+                  <a href="https://www.burmanu.ca" rel="noreferrer" target="_blank">
                     Burman University
                   </a>
                 </div>
                 <div>
-                  <a href="https://lacombe.ecdev.org" target="_blank">
+                  <a href="https://lacombe.ecdev.org" rel="noreferrer" target="_blank">
                     Lacombe Economic Development
                   </a>
                 </div>
                 <div>
-                  <a href="https://www.lacombetourism.com" target="_blank">
+                  <a href="https://www.lacombetourism.com" rel="noreferrer" target="_blank">
                     Lacombe Tourism
                   </a>
                 </div>
@@ -57,7 +57,11 @@ export default () => {
           <div style={{ height: '50px' }} />
 
           <div>
-            <img src="/images/logo-app.svg" style={{ height: '80px' }} />
+            <img
+              src="/images/logo-app.svg"
+              alt="Echo Lacombe Association Logo"
+              style={{ height: '80px' }}
+            />
           </div>
 
           <div>
@@ -77,3 +81,5 @@ export default () => {
     </>
   );
 };
+
+export default C;

@@ -9,7 +9,7 @@ const C = () => {
       <Layout>
         <section class="section">
           <div className="container">
-            <h1 class="title">{PAGES.aboutUs.boardMembers.title}</h1>
+            <h1 class="title">{PAGES.aboutUs.termsOfReference.title}</h1>
             <h2 class="subtitle">
               A simple container to divide your page into <strong>sections</strong>, like the one
               you're currently reading.

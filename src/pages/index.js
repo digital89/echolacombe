@@ -7,7 +7,7 @@ import Layout from '../components/Layout';
 import styles from '../styles';
 import { imagePathToSmallImagePath } from '../utilities';
 
-export default () => {
+const C = () => {
   return (
     <>
       <Layout>
@@ -15,7 +15,11 @@ export default () => {
           <div className="hero-body">
             <div className="container">
               <p>
-                <img src="/images/logo-app.svg" style={{ height: '200px' }} />
+                <img
+                  src="/images/logo-app.svg"
+                  alt="Echo Lacombe Association Logo"
+                  style={{ height: '200px' }}
+                />
               </p>
               <p className="title">{pageHomeHeroTitle}</p>
               <p className="subtitle">{pageHomeHeroSubtitle}</p>
@@ -65,3 +69,5 @@ export default () => {
     </>
   );
 };
+
+export default C;

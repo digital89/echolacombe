@@ -1,4 +1,4 @@
-export default {
+const styles = {
   colors: {},
   sizes: {
     // bulma
@@ -9,3 +9,5 @@ export default {
     fullhd: 1050,
   },
 };
+
+export default styles;

@@ -24,15 +24,15 @@ const NavLink = ({
   );
 };
 
-export default ({ children }) => {
-  const handleClickNavbarItem = () => {
-    const burger = window.document.querySelector('.navbar-burger');
-    const menu = window.document.querySelector('.navbar-menu');
-    if (burger && menu) {
-      burger.classList.remove('is-active');
-      menu.classList.remove('is-active');
-    }
-  };
+const C = ({ children }) => {
+  // const handleClickNavbarItem = () => {
+  //   const burger = window.document.querySelector('.navbar-burger');
+  //   const menu = window.document.querySelector('.navbar-menu');
+  //   if (burger && menu) {
+  //     burger.classList.remove('is-active');
+  //     menu.classList.remove('is-active');
+  //   }
+  // };
 
   const handleBurgerClick = () => {
     const burger = window.document.querySelector('.navbar-burger');
@@ -82,9 +82,7 @@ export default ({ children }) => {
                     {PAGES.business.businessInitiativeFund.title}
                   </NavLink>
                   <a className="navbar-item">Small Business Emergency Fund</a>
-                  <a className="navbar-item">
-                    Downtown Storefront Enhancement Program
-                  </a>
+                  <a className="navbar-item">Downtown Storefront Enhancement Program</a>
                   <hr className="navbar-divider" />
                   <a className="navbar-item">Radio Co-Op Advertising</a>
                   <a className="navbar-item">Social Media Breakfast Lacombe</a>
@@ -108,6 +106,7 @@ export default ({ children }) => {
               <a
                 class="navbar-item"
                 href="https://www.echoenergy.ca"
+                rel="noreferrer"
                 target="_blank"
               >
                 Echo Energy &#x279A;
@@ -121,10 +120,7 @@ export default ({ children }) => {
                 </NavLink>
 
                 <div className="navbar-dropdown">
-                  <NavLink
-                    to={PAGES.aboutUs.communityEconomicDevelopmentStrategy.slug}
-                    item
-                  >
+                  <NavLink to={PAGES.aboutUs.communityEconomicDevelopmentStrategy.slug} item>
                     {PAGES.aboutUs.communityEconomicDevelopmentStrategy.title}
                   </NavLink>
                   <NavLink to={PAGES.aboutUs.boardMembers.slug} item>
@@ -145,18 +141,21 @@ export default ({ children }) => {
               <div className="navbar-item">
                 <a
                   href="https://twitter.com/echoenergy14"
+                  rel="noreferrer"
                   target="_blank"
                   style={{ marginRight: '10px' }}
                 >
                   <img
                     src="/images/icon-twitter.svg"
+                    alt="Twitter Icon"
                     height="40px"
                     width="40px"
                   />
                 </a>
-                <a href="https://www.facebook.com/echolacombe/" target="_blank">
+                <a href="https://www.facebook.com/echolacombe/" rel="noreferrer" target="_blank">
                   <img
                     src="/images/icon-facebook.svg"
+                    alt="Facebook Icon"
                     height="40px"
                     width="40px"
                   />
@@ -169,3 +168,5 @@ export default ({ children }) => {
     </>
   );
 };
+
+export default C;
