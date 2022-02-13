@@ -1,15 +1,19 @@
-import React from "react";
-import { Helmet } from "react-helmet";
+import React from 'react';
+import { Helmet } from 'react-helmet';
 
-import { domainName, seoDescription, seoTitle } from "../../cms/data.json";
+import { domainName, seoDescription, seoTitle } from '../../cms/data.json';
+import Footer from './Footer';
+import Navbar from './Navbar';
 
-import "../styles/index.scss";
+import '../styles/index.scss';
 
-const Layout = ({ children }) => {
+export default ({ children }) => {
   return (
     <>
+
       <Helmet>
-        <html lang="en" className="has-navbar-fixed-top" />
+        {/* <html lang="en" className="has-navbar-fixed-top" /> */}
+        <html lang="en" />
 
         <title>{seoTitle}</title>
         <meta name="description" content={seoDescription} />
@@ -32,9 +36,12 @@ const Layout = ({ children }) => {
         <meta name="theme-color" content="#D3D3D3" />
       </Helmet>
 
+      <Navbar />
+
       {children}
+
+      <Footer />
+
     </>
   );
 };
-
-export default Layout;

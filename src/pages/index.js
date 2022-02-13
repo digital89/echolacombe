@@ -7,68 +7,77 @@ import {
 import {
   items as galleryItems,
 } from '../../cms/gallery'
-import Layout from "../components/Layout";
+import Layout from '../components/Layout';
 import styles from '../styles';
 import { imagePathToSmallImagePath } from '../utilities';
 
-const urlify = (text) => {
-  const regex = /(https?:\/\/[^\s]+)/gi
-  return text.replace(regex, match => (
-    `<a href="${match}" target="_blank" rel="noopener noreferrer">${match}</a>`
-  ))
-}
-
-const emailify = (text) => {
-  // eslint-disable-next-line no-useless-escape
-  const regex = /(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@[*[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+]*/gi
-  return text.replace(regex, match => `<a href="mailto:${match}">${match}</a>`)
-}
-
-const IndexPage = () => {
-  const gallery = useRef(null);
-
-  const handleClickNavbarItem = () => {
-    const burger = window.document.querySelector('.navbar-burger');
-    const menu = window.document.querySelector('.navbar-menu');
-    if (burger && menu) {
-      burger.classList.remove('is-active');
-      menu.classList.remove('is-active');
-    }
-  }
-
-  const handleBurgerClick = () => {
-    const burger = window.document.querySelector('.navbar-burger');
-    const menu = window.document.querySelector('.navbar-menu');
-    if (burger && menu) {
-      burger.classList.toggle('is-active');
-      menu.classList.toggle('is-active');
-    }
-  };
-
+export default () => {
   return (
     <>
       <Layout>
-        <div>hello</div>
 
-        <footer className="footer">
-          <div className="content has-text-centered">
-            <div>
-              <span>© Echo Lacombe Association</span>
-              <span> - </span>
-              <a
-                href="https://digital89.com"
-                title="Website by Digital89"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Website by <strong>Digital89</strong>
-              </a>
+        <section className="hero is-link">
+          <div className="hero-body">
+            <div className="container">
+              <p>
+                <img src="/images/logo-app.svg" style={{ height: '200px' }} />
+              </p>
+              <p className="title">
+                We are the Echo Lacombe Association!
+              </p>
+              <p className="subtitle">
+                Our vision is to improve the quality of life within Lacombe by fostering a collaborative environment focused on cultivating innovation, nurturing a business-friendly culture, promoting sustainable growth and creating a safe, inclusive, vibrant and healthy community.
+              </p>
             </div>
           </div>
-        </footer>
+        </section>
+
+        <section className="section">
+          <div className="container">
+
+            <h1 className="title">What are we?</h1>
+            <h2 className="subtitle">
+              Echo Lacombe Association is a group of local volunteers who facilitate to function of Echo Energy and Echo Internet, and in turn organize and execute local projects.
+            </h2>
+
+            <div className="columns">
+
+              <div className="column">
+
+                <div className="card">
+                  <div className="card-content">
+                    <div className="content">
+                      <h3>Looking for sponsorship?</h3>
+                      <p>
+                        Echo Lacombe looks to support local events, groups and facilities that align with our vision and principles.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div className="column">
+
+                <div className="card">
+                  <div className="card-content">
+                    <div className="content">
+                      <h3>Get your project rolling!</h3>
+                      <p>
+                        Looking to get you community project or program off the ground. We can help.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
       </Layout>
     </>
   );
 };
-
-export default IndexPage;

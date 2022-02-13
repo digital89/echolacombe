@@ -1,5 +1,7 @@
 export default {
-  colors: {},
+  colors: {
+    
+  },
   sizes: {
     // bulma
     phone: 500,

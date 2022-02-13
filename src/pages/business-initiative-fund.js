@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
+import { PAGES } from '../constants';
 
 export default () => {
   return (
@@ -9,9 +10,9 @@ export default () => {
 
         <section class="section">
           <div className="container">
-            <h1 class="title">404 - Page Not Found</h1>
+            <h1 class="title">{PAGES.business.businessInitiativeFund.title}</h1>
             <h2 class="subtitle">
-              The page you are looking for no longer exists...
+              A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading.
             </h2>
           </div>
         </section>
