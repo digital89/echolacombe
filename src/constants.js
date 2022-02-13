@@ -22,9 +22,31 @@ export const PAGES = {
     },
   },
   business: {
+    default: {
+      title: 'Business',
+      slug: 'business',
+    },
     businessInitiativeFund: {
       title: 'Business Initiative Fund',
       slug: 'business-initiative-fund',
-    }
-  }
-}
+    },
+  },
+  community: {
+    communityGrants: {
+      title: 'Community Grants',
+      slug: 'community-grants',
+    },
+    communityWellnessApplication: {
+      title: 'Community Wellness Application',
+      slug: 'community-wellness-application',
+    },
+    merchYourWayProgram: {
+      title: 'Merch Your Way Program',
+      slug: 'merch-your-way-program',
+    },
+    foodRescue: {
+      title: 'Food Rescue',
+      slug: 'food-rescue',
+    },
+  },
+};

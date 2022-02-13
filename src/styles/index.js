@@ -1,7 +1,5 @@
 export default {
-  colors: {
-    
-  },
+  colors: {},
   sizes: {
     // bulma
     phone: 500,
@@ -10,4 +8,4 @@ export default {
     widescreen: 1050,
     fullhd: 1050,
   },
-}
+};

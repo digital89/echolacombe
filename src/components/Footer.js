@@ -3,30 +3,36 @@ import React from 'react';
 export default () => {
   return (
     <>
-
       <footer className="footer">
-
         <div className="content has-text-centered">
-
           <div>
             <div class="columns">
-
               <div class="column">
                 <h4>Helpful links:</h4>
                 <div>
-                  <a href="https://www.lacombe.ca" target="_blank">City of Lacombe</a>
+                  <a href="https://www.lacombe.ca" target="_blank">
+                    City of Lacombe
+                  </a>
                 </div>
                 <div>
-                  <a href="https://www.lacombechamber.ca" target="_blank">Lacombe Chamber of Commerce</a>
+                  <a href="https://www.lacombechamber.ca" target="_blank">
+                    Lacombe Chamber of Commerce
+                  </a>
                 </div>
                 <div>
-                  <a href="https://www.burmanu.ca" target="_blank">Burman University</a>
+                  <a href="https://www.burmanu.ca" target="_blank">
+                    Burman University
+                  </a>
                 </div>
                 <div>
-                  <a href="https://lacombe.ecdev.org" target="_blank">Lacombe Economic Development</a>
+                  <a href="https://lacombe.ecdev.org" target="_blank">
+                    Lacombe Economic Development
+                  </a>
                 </div>
                 <div>
-                  <a href="https://www.lacombetourism.com" target="_blank">Lacombe Tourism</a>
+                  <a href="https://www.lacombetourism.com" target="_blank">
+                    Lacombe Tourism
+                  </a>
                 </div>
               </div>
 
@@ -41,11 +47,10 @@ export default () => {
                   <br />
                   <br />
                   <span>(403) 782-1263</span>
-                  <br/>
+                  <br />
                   <span>guy@echolacombe.ca</span>
                 </div>
               </div>
-
             </div>
           </div>
 
@@ -67,11 +72,8 @@ export default () => {
               Website by <strong>Digital89</strong>
             </a>
           </div>
-
         </div>
-
       </footer>
-
     </>
   );
-}
+};

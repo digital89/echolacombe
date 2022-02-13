@@ -21,8 +21,8 @@ const NavLink = ({
     >
       {children}
     </Link>
-  )
-}
+  );
+};
 
 export default ({ children }) => {
   const handleClickNavbarItem = () => {
@@ -32,7 +32,7 @@ export default ({ children }) => {
       burger.classList.remove('is-active');
       menu.classList.remove('is-active');
     }
-  }
+  };
 
   const handleBurgerClick = () => {
     const burger = window.document.querySelector('.navbar-burger');
@@ -46,9 +46,7 @@ export default ({ children }) => {
   return (
     <>
       <nav className="navbar" role="navigation" aria-label="main navigation">
-
         <div className="container">
-
           <div className="navbar-brand">
             <a className="navbar-item">
               {/* <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" /> */}
@@ -76,62 +74,46 @@ export default ({ children }) => {
 
               <div className="navbar-item has-dropdown is-hoverable">
                 <NavLink to={PAGES.business.businessInitiativeFund.slug} link>
-                  Business
+                  {PAGES.business.default.title}
                 </NavLink>
 
                 <div className="navbar-dropdown">
                   <NavLink to={PAGES.business.businessInitiativeFund.slug} item>
                     {PAGES.business.businessInitiativeFund.title}
                   </NavLink>
-                  <a className="navbar-item">
-                    Small Business Emergency Fund
-                  </a>
+                  <a className="navbar-item">Small Business Emergency Fund</a>
                   <a className="navbar-item">
                     Downtown Storefront Enhancement Program
                   </a>
                   <hr className="navbar-divider" />
-                  <a className="navbar-item">
-                    Radio Co-Op Advertising
-                  </a>
-                  <a className="navbar-item">
-                    Social Media Breakfast Lacombe
-                  </a>
+                  <a className="navbar-item">Radio Co-Op Advertising</a>
+                  <a className="navbar-item">Social Media Breakfast Lacombe</a>
                   <hr className="navbar-divider" />
-                  <a className="navbar-item">
-                    Lacombe Business Toolkit
-                  </a>
+                  <a className="navbar-item">Lacombe Business Toolkit</a>
                 </div>
               </div>
 
               <div className="navbar-item has-dropdown is-hoverable">
-                <a className="navbar-link">
-                  Community
-                </a>
+                <a className="navbar-link">Community</a>
 
                 <div className="navbar-dropdown">
-                  <a className="navbar-item">
-                    Community Grants
-                  </a>
-                  <a className="navbar-item">
-                    Community Wellness Application
-                  </a>
+                  <a className="navbar-item">Community Grants</a>
+                  <a className="navbar-item">Community Wellness Application</a>
                   {/* <hr className="navbar-divider" /> */}
-                  <a className="navbar-item">
-                    Merch Your Way Program
-                  </a>
-                  <a className="navbar-item">
-                    Food Rescue
-                  </a>
+                  <a className="navbar-item">Merch Your Way Program</a>
+                  <a className="navbar-item">Food Rescue</a>
                 </div>
               </div>
 
-              <a class="navbar-item" href="https://www.echoenergy.ca" target="_blank">
+              <a
+                class="navbar-item"
+                href="https://www.echoenergy.ca"
+                target="_blank"
+              >
                 Echo Energy &#x279A;
               </a>
 
-              <a class="navbar-item">
-                Media
-              </a>
+              <a class="navbar-item">Media</a>
 
               <div className="navbar-item has-dropdown is-hoverable">
                 <NavLink to={PAGES.aboutUs.default.slug} link>
@@ -139,7 +121,10 @@ export default ({ children }) => {
                 </NavLink>
 
                 <div className="navbar-dropdown">
-                  <NavLink to={PAGES.aboutUs.communityEconomicDevelopmentStrategy.slug} item>
+                  <NavLink
+                    to={PAGES.aboutUs.communityEconomicDevelopmentStrategy.slug}
+                    item
+                  >
                     {PAGES.aboutUs.communityEconomicDevelopmentStrategy.title}
                   </NavLink>
                   <NavLink to={PAGES.aboutUs.boardMembers.slug} item>
@@ -154,7 +139,6 @@ export default ({ children }) => {
                   </NavLink>
                 </div>
               </div>
-
             </div>
 
             <div className="navbar-end">
@@ -164,20 +148,23 @@ export default ({ children }) => {
                   target="_blank"
                   style={{ marginRight: '10px' }}
                 >
-                  <img src="/images/icon-twitter.svg" height="40px" width="40px" />
+                  <img
+                    src="/images/icon-twitter.svg"
+                    height="40px"
+                    width="40px"
+                  />
                 </a>
-                <a
-                  href="https://www.facebook.com/echolacombe/"
-                  target="_blank"
-                >
-                  <img src="/images/icon-facebook.svg" height="40px" width="40px" />
+                <a href="https://www.facebook.com/echolacombe/" target="_blank">
+                  <img
+                    src="/images/icon-facebook.svg"
+                    height="40px"
+                    width="40px"
+                  />
                 </a>
               </div>
             </div>
           </div>
-
         </div>
-
       </nav>
     </>
   );

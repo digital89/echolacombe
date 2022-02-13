@@ -6,7 +6,6 @@ export default () => {
   return (
     <>
       <Layout>
-
         <section class="section">
           <div className="container">
             <h1 class="title">404 - Page Not Found</h1>
@@ -15,7 +14,6 @@ export default () => {
             </h2>
           </div>
         </section>
-
       </Layout>
     </>
   );
