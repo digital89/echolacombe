@@ -25,6 +25,13 @@ collections:
           - { name: 'contactPhoneRaw', label: 'Phone Number Raw', widget: 'string' }
           - { name: 'pageHomeHeroTitle', label: 'Page Home Hero Title', widget: 'string' }
           - { name: 'pageHomeHeroSubtitle', label: 'Page Home Hero Subtitle', widget: 'string' }
+          - name: 'pageMediaNewsReleases'
+            label: 'Page Media News Releases'
+            label_singular: 'Page Media News Release'
+            widget: 'list'
+            fields:
+              - { name: 'title', label: 'News Release Title', widget: 'string' }
+              - { name: 'url', label: 'News Release URL', widget: 'string' }
           - { name: 'seoDescription', label: 'SEO Description', widget: 'text' }
           - { name: 'seoTitle', label: 'SEO Title', widget: 'string' }
 

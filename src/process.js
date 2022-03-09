@@ -9,9 +9,7 @@ const generateSmallImages = (config) => {
       const filepath = filepaths[i];
       const filename = filepath.split('/').pop();
       const image = await jimp.read(`${config.inputPath}${filename}`);
-      image
-        .resize(config.width, jimp.AUTO)
-        .write(`${config.outputPath}${filename}`);
+      image.resize(config.width, jimp.AUTO).write(`${config.outputPath}${filename}`);
     }
   });
 };

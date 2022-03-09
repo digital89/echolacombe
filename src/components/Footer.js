@@ -1,42 +1,45 @@
 import React from 'react';
 
+import { contactEmail, contactPhone, contactPhoneRaw } from '../../cms/data';
+import ExternalArrow from './ExternalArrow';
+
 const C = () => {
   return (
     <>
       <footer className="footer">
         <div className="content has-text-centered">
           <div>
-            <div class="columns">
-              <div class="column">
+            <div className="columns">
+              <div className="column">
                 <h4>Helpful links:</h4>
                 <div>
                   <a href="https://www.lacombe.ca" rel="noreferrer" target="_blank">
-                    City of Lacombe
+                    City of Lacombe <ExternalArrow />
                   </a>
                 </div>
                 <div>
                   <a href="https://www.lacombechamber.ca" rel="noreferrer" target="_blank">
-                    Lacombe Chamber of Commerce
+                    Lacombe Chamber of Commerce <ExternalArrow />
                   </a>
                 </div>
                 <div>
                   <a href="https://www.burmanu.ca" rel="noreferrer" target="_blank">
-                    Burman University
+                    Burman University <ExternalArrow />
                   </a>
                 </div>
                 <div>
                   <a href="https://lacombe.ecdev.org" rel="noreferrer" target="_blank">
-                    Lacombe Economic Development
+                    Lacombe Economic Development <ExternalArrow />
                   </a>
                 </div>
                 <div>
                   <a href="https://www.lacombetourism.com" rel="noreferrer" target="_blank">
-                    Lacombe Tourism
+                    Lacombe Tourism <ExternalArrow />
                   </a>
                 </div>
               </div>
 
-              <div class="column">
+              <div className="column">
                 <h4>Contact us:</h4>
                 <div>
                   <span>Echo Lacombe Association</span>
@@ -46,9 +49,9 @@ const C = () => {
                   <span>Lacombe, AB T4L 0B6</span>
                   <br />
                   <br />
-                  <span>(403) 782-1263</span>
+                  <a href={`tel:${contactPhoneRaw}`}>{contactPhone}</a>
                   <br />
-                  <span>guy@echolacombe.ca</span>
+                  <a href={`mailto:${contactEmail}`}>{contactEmail}</a>
                 </div>
               </div>
             </div>

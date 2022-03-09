@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
+import { PAGES } from '../constants';
 
 const C = () => {
   return (
@@ -8,8 +9,8 @@ const C = () => {
       <Layout>
         <section className="section">
           <div className="container content">
-            <h1>404 - Page Not Found</h1>
-            <p>The page you are looking for no longer exists...</p>
+            <h1>{PAGES.aboutUs.default.title}</h1>
+            <h2>Template subtitle...</h2>
           </div>
         </section>
       </Layout>

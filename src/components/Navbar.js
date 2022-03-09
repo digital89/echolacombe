@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import classNames from 'classnames';
 
 import { PAGES } from '../constants';
+import ExternalArrow from './ExternalArrow';
 
 const NavLink = ({
   children,
@@ -25,16 +26,17 @@ const NavLink = ({
 };
 
 const C = ({ children }) => {
-  // const handleClickNavbarItem = () => {
-  //   const burger = window.document.querySelector('.navbar-burger');
-  //   const menu = window.document.querySelector('.navbar-menu');
-  //   if (burger && menu) {
-  //     burger.classList.remove('is-active');
-  //     menu.classList.remove('is-active');
-  //   }
-  // };
+  const handleClickNavbarItem = () => {
+    const burger = window.document.querySelector('.navbar-burger');
+    const menu = window.document.querySelector('.navbar-menu');
+    if (burger && menu) {
+      burger.classList.remove('is-active');
+      menu.classList.remove('is-active');
+    }
+  };
 
-  const handleBurgerClick = () => {
+  const handleBurgerClick = (event) => {
+    event.preventDefault();
     const burger = window.document.querySelector('.navbar-burger');
     const menu = window.document.querySelector('.navbar-menu');
     if (burger && menu) {
@@ -48,17 +50,17 @@ const C = ({ children }) => {
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="container">
           <div className="navbar-brand">
-            <a className="navbar-item">
-              {/* <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" /> */}
+            <NavLink item to="">
               <img src="/images/logo.svg" alt="Logo" />
-            </a>
+            </NavLink>
 
             <a
-              role="button"
-              className="navbar-burger"
-              aria-label="menu"
               aria-expanded="false"
+              aria-label="menu"
+              className="navbar-burger"
+              href="/"
               onClick={handleBurgerClick}
+              role="button"
             >
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
@@ -68,17 +70,17 @@ const C = ({ children }) => {
 
           <div className="navbar-menu">
             <div className="navbar-start">
-              <NavLink to="" item>
+              <NavLink item to="">
                 Home
               </NavLink>
 
               <div className="navbar-item has-dropdown is-hoverable">
-                <NavLink to={PAGES.business.businessInitiativeFund.slug} link>
+                <NavLink link to={PAGES.business.businessInitiativeFund.slug}>
                   {PAGES.business.default.title}
                 </NavLink>
 
                 <div className="navbar-dropdown">
-                  <NavLink to={PAGES.business.businessInitiativeFund.slug} item>
+                  <NavLink item to={PAGES.business.businessInitiativeFund.slug}>
                     {PAGES.business.businessInitiativeFund.title}
                   </NavLink>
                   <a className="navbar-item">Small Business Emergency Fund</a>
@@ -92,46 +94,54 @@ const C = ({ children }) => {
               </div>
 
               <div className="navbar-item has-dropdown is-hoverable">
-                <a className="navbar-link">Community</a>
+                <NavLink link to={PAGES.community.communityGrants.slug}>
+                  {PAGES.community.default.title}
+                </NavLink>
 
                 <div className="navbar-dropdown">
-                  <a className="navbar-item">Community Grants</a>
-                  <a className="navbar-item">Community Wellness Application</a>
-                  {/* <hr className="navbar-divider" /> */}
-                  <a className="navbar-item">Merch Your Way Program</a>
-                  <a className="navbar-item">Food Rescue</a>
+                  <NavLink item to={PAGES.community.communityGrants.slug}>
+                    {PAGES.community.communityGrants.title}
+                  </NavLink>
+                  <NavLink item to={PAGES.community.communityWellnessApplication.slug}>
+                    {PAGES.community.communityWellnessApplication.title}
+                  </NavLink>
+                  <hr className="navbar-divider" />
+                  <NavLink item to={PAGES.community.merchYourWayProgram.slug}>
+                    {PAGES.community.merchYourWayProgram.title}
+                  </NavLink>
+                  <NavLink item to={PAGES.community.foodRescue.slug}>
+                    {PAGES.community.foodRescue.title}
+                  </NavLink>
                 </div>
               </div>
 
               <a
-                class="navbar-item"
+                className="navbar-item"
                 href="https://www.echoenergy.ca"
                 rel="noreferrer"
                 target="_blank"
               >
-                Echo Energy &#x279A;
+                Echo Energy <ExternalArrow />
               </a>
 
-              <a class="navbar-item">Media</a>
+              <NavLink item to={PAGES.media.default.slug}>
+                {PAGES.media.default.title}
+              </NavLink>
 
               <div className="navbar-item has-dropdown is-hoverable">
-                <NavLink to={PAGES.aboutUs.default.slug} link>
+                <NavLink link to={PAGES.aboutUs.default.slug}>
                   {PAGES.aboutUs.default.title}
                 </NavLink>
 
                 <div className="navbar-dropdown">
-                  <NavLink to={PAGES.aboutUs.communityEconomicDevelopmentStrategy.slug} item>
+                  <NavLink item to={PAGES.aboutUs.communityEconomicDevelopmentStrategy.slug}>
                     {PAGES.aboutUs.communityEconomicDevelopmentStrategy.title}
                   </NavLink>
-                  <NavLink to={PAGES.aboutUs.boardMembers.slug} item>
-                    {PAGES.aboutUs.boardMembers.title}
+                  <NavLink item to={PAGES.aboutUs.boardMembers.slug}>
+                    {PAGES.aboutUs.boardMembers.titleNav}
                   </NavLink>
-                  <NavLink to={PAGES.aboutUs.termsOfReference.slug} item>
-                    {PAGES.aboutUs.termsOfReference.title}
-                  </NavLink>
-                  <hr className="navbar-divider" />
-                  <NavLink to={PAGES.aboutUs.contactUs.slug} item>
-                    {PAGES.aboutUs.contactUs.title}
+                  <NavLink item to={PAGES.aboutUs.termsOfReference.slug}>
+                    {PAGES.aboutUs.termsOfReference.titleNav}
                   </NavLink>
                 </div>
               </div>

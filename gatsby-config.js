@@ -4,6 +4,6 @@ module.exports = {
     'gatsby-plugin-netlify-cms',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
-    // 'gatsby-plugin-styled-jsx'
+    // 'gatsby-plugin-styled-jsx',
   ],
 };
