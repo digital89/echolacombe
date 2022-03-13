@@ -83,13 +83,32 @@ const C = ({ children }) => {
                   <NavLink item to={PAGES.business.businessInitiativeFund.slug}>
                     {PAGES.business.businessInitiativeFund.title}
                   </NavLink>
-                  <a className="navbar-item">Small Business Emergency Fund</a>
-                  <a className="navbar-item">Downtown Storefront Enhancement Program</a>
+                  <NavLink item to={PAGES.business.smallBusinessEmergencyFund.slug}>
+                    {PAGES.business.smallBusinessEmergencyFund.title}
+                  </NavLink>
+                  <NavLink item to={PAGES.business.downtownStorefrontEnhancementProgram.slug}>
+                    {PAGES.business.downtownStorefrontEnhancementProgram.title}
+                  </NavLink>
+                  <NavLink item to={PAGES.business.radioCoopAdvertising.slug}>
+                    {PAGES.business.radioCoopAdvertising.title}
+                  </NavLink>
                   <hr className="navbar-divider" />
-                  <a className="navbar-item">Radio Co-Op Advertising</a>
-                  <a className="navbar-item">Social Media Breakfast Lacombe</a>
-                  <hr className="navbar-divider" />
-                  <a className="navbar-item">Lacombe Business Toolkit</a>
+                  <a
+                    className="navbar-item"
+                    href="https://smblacombe.ca"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    Social Media Breakfast Lacombe <ExternalArrow />
+                  </a>
+                  <a
+                    className="navbar-item"
+                    href="https://lacombe.ecdev.org"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    Lacombe Business Toolkit <ExternalArrow />
+                  </a>
                 </div>
               </div>
 

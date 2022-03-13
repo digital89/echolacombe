@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { contactEmail } from '../../cms/data';
+import { contactEmail, contactName } from '../../cms/data';
 import ExternalArrow from '../components/ExternalArrow';
 import Layout from '../components/Layout';
 import ListItems from '../components/ListItems';
@@ -72,7 +72,7 @@ const C = () => {
               , in person, or by email to:
             </p>
             <p>
-              Guy Lapointe
+              {contactName}
               <br />
               5432-56th Ave
               <br />

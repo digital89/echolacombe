@@ -28,6 +28,18 @@ export const PAGES = {
       title: 'Business Initiative Fund',
       slug: 'business-initiative-fund',
     },
+    downtownStorefrontEnhancementProgram: {
+      title: 'Downtown Storefront Enhancement Program',
+      slug: 'downtown-storefront-enhancement-program',
+    },
+    radioCoopAdvertising: {
+      title: 'Radio Co-Op Advertising',
+      slug: 'radio-coop-advertising',
+    },
+    smallBusinessEmergencyFund: {
+      title: 'Small Business Emergency Fund',
+      slug: 'small-business-emergency-fund',
+    },
   },
   community: {
     default: {
