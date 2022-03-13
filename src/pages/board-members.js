@@ -27,11 +27,6 @@ const C = () => {
                 <a href="mailto:thalia@echolacombe.ca">thalia@echolacombe.ca</a>
               </li>
               <li>
-                <span>Director (Steve Schultz – Member at Large representative)</span>
-                <span> - </span>
-                <a href="mailto:steven@echolacombe.ca">steven@echolacombe.ca</a>
-              </li>
-              <li>
                 <span>Director (David Jeffrey – Burman University representative)</span>
                 <span> - </span>
                 <a href="mailto:david@echolacombe.ca">david@echolacombe.ca</a>
