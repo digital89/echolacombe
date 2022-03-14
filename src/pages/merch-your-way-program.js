@@ -16,7 +16,7 @@ const C = () => {
 
             <h3>What are Merch Your Way Grants?</h3>
             <p>
-              The Merch Your Way Program is available to assist the Lacombe community’s promotion
+              The Merch Your Way Program is available to assist the Lacombe community's promotion
               via community branded items.
             </p>
 
