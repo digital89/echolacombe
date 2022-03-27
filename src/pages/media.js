@@ -3,8 +3,8 @@ import React, { useEffect, useState } from 'react';
 import LazyLoad from 'react-lazyload';
 import Masonry from 'react-masonry-css';
 
-import { pageMediaNewsReleases } from '../../cms/data';
 import { items as galleryItems } from '../../cms/gallery';
+import { items as newsItems } from '../../cms/news';
 import ExternalArrow from '../components/ExternalArrow';
 import Layout from '../components/Layout';
 // import { PAGES } from '../constants';
@@ -34,13 +34,19 @@ const C = () => {
   return (
     <>
       <Layout>
+        {/* <section className="section"> */}
+        <div className="container content">
+          <h1>News Releases & Gallery</h1>
+        </div>
+        {/* </section> */}
+
         <section className="section">
           <div className="container content">
-            <h1>News Releases</h1>
-            {pageMediaNewsReleases &&
-              pageMediaNewsReleases.map(({ title, url }) => (
+            <h3>News</h3>
+            {newsItems &&
+              newsItems.map(({ title, file, url }) => (
                 <div>
-                  <a href={url} rel="noreferrer" target="_blank">
+                  <a href={file || url} rel="noreferrer" target="_blank">
                     {title} <ExternalArrow />
                   </a>
                 </div>

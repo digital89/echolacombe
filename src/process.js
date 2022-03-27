@@ -16,8 +16,8 @@ const generateSmallImages = (config) => {
 
 const main = () => {
   generateSmallImages({
-    inputPath: './static/images/uploads/',
-    outputPath: './public/images/uploads-small/',
+    inputPath: './static/uploads/',
+    outputPath: './public/uploads-small/',
     width: 400,
   });
 };

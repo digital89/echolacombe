@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: static/images/uploads
-public_folder: /images/uploads
+media_folder: static/uploads
+public_folder: /uploads
 
 display_url: https://echolacombe.ca/
 logo_url: https://echolacombe.ca/images/logo.png
@@ -25,13 +25,6 @@ collections:
           - { name: 'contactPhoneRaw', label: 'Phone Number Raw', widget: 'string' }
           - { name: 'pageHomeHeroTitle', label: 'Page Home Hero Title', widget: 'string' }
           - { name: 'pageHomeHeroSubtitle', label: 'Page Home Hero Subtitle', widget: 'string' }
-          - name: 'pageMediaNewsReleases'
-            label: 'Page Media News Releases'
-            label_singular: 'Page Media News Release'
-            widget: 'list'
-            fields:
-              - { name: 'title', label: 'News Release Title', widget: 'string' }
-              - { name: 'url', label: 'News Release URL', widget: 'string' }
           - { name: 'seoDescription', label: 'SEO Description', widget: 'text' }
           - { name: 'seoTitle', label: 'SEO Title', widget: 'string' }
 
@@ -46,3 +39,16 @@ collections:
             fields:
               - { name: 'title', label: 'Gallery Item Title', widget: 'string' }
               - { name: 'image', label: 'Gallery Item Image', widget: 'image' }
+
+      - name: 'news'
+        label: 'News'
+        file: 'cms/news.json'
+        fields:
+          - name: 'items'
+            label: 'News Items'
+            label_singular: 'News Item'
+            widget: 'list'
+            fields:
+              - { name: 'title', label: 'News Item Title', widget: 'string' }
+              - { name: 'file', label: 'News Item File', widget: 'file' }
+              - { name: 'url', label: 'News Item External URL', widget: 'string' }
