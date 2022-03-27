@@ -32,6 +32,11 @@ export const PAGES = {
       title: 'Downtown Storefront Enhancement Program',
       slug: 'downtown-storefront-enhancement-program',
     },
+    sponsorship: {
+      title: 'Sponsorship',
+      titleNav: 'Sponsorship Inquiries',
+      slug: 'sponsorship',
+    },
     radioCoopAdvertising: {
       title: 'Radio Co-Op Advertising',
       slug: 'radio-coop-advertising',
@@ -68,11 +73,13 @@ export const PAGES = {
       title: 'Media',
       slug: 'media',
     },
-  },
-  sponsorship: {
-    default: {
-      title: 'Sponsorship Inquiries',
-      slug: 'sponsorship',
+    gallery: {
+      title: 'Gallery',
+      slug: 'gallery',
+    },
+    news: {
+      title: 'News Releases',
+      slug: 'news-releases',
     },
   },
 };

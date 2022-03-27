@@ -4,10 +4,8 @@ import LazyLoad from 'react-lazyload';
 import Masonry from 'react-masonry-css';
 
 import { items as galleryItems } from '../../cms/gallery';
-import { items as newsItems } from '../../cms/news';
-import ExternalArrow from '../components/ExternalArrow';
 import Layout from '../components/Layout';
-// import { PAGES } from '../constants';
+import { PAGES } from '../constants';
 import { imagePathToSmallImagePath } from '../utilities';
 
 const C = () => {
@@ -34,29 +32,9 @@ const C = () => {
   return (
     <>
       <Layout>
-        {/* <section className="section"> */}
-        <div className="container content">
-          <h1>News Releases & Gallery</h1>
-        </div>
-        {/* </section> */}
-
         <section className="section">
           <div className="container content">
-            <h3>News</h3>
-            {newsItems &&
-              newsItems.map(({ title, file, url }) => (
-                <div>
-                  <a href={file || url} rel="noreferrer" target="_blank">
-                    {title} <ExternalArrow />
-                  </a>
-                </div>
-              ))}
-          </div>
-        </section>
-
-        <section className="section">
-          <div className="container content">
-            <h1>Gallery</h1>
+            <h1>{PAGES.media.gallery.title}</h1>
 
             <div>
               <Masonry

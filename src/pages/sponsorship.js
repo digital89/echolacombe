@@ -10,7 +10,7 @@ const C = () => {
       <Layout>
         <section className="section">
           <div className="container content">
-            <h1>{PAGES.sponsorship.default.title}</h1>
+            <h1>{PAGES.business.sponsorship.titleNav}</h1>
             <p>
               <span>
                 Echo Lacombe looks to support local events, groups and facilities that align with

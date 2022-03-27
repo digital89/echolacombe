@@ -50,9 +50,11 @@ const C = ({ children }) => {
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="container">
           <div className="navbar-brand">
-            <NavLink item to="">
-              <img src="/images/logo.svg" alt="Logo" />
-            </NavLink>
+            <div className="navbar-brand-div">
+              <NavLink item to="">
+                <img src="/images/logo.svg" alt="Logo" />
+              </NavLink>
+            </div>
 
             <a
               aria-expanded="false"
@@ -70,9 +72,9 @@ const C = ({ children }) => {
 
           <div className="navbar-menu">
             <div className="navbar-start">
-              <NavLink item to="">
+              {/* <NavLink item to="">
                 Home
-              </NavLink>
+              </NavLink> */}
 
               <div className="navbar-item has-dropdown is-hoverable">
                 <NavLink link to={PAGES.business.businessInitiativeFund.slug}>
@@ -88,6 +90,9 @@ const C = ({ children }) => {
                   </NavLink>
                   <NavLink item to={PAGES.business.downtownStorefrontEnhancementProgram.slug}>
                     {PAGES.business.downtownStorefrontEnhancementProgram.title}
+                  </NavLink>
+                  <NavLink item to={PAGES.business.sponsorship.slug}>
+                    {PAGES.business.sponsorship.titleNav}
                   </NavLink>
                   <NavLink item to={PAGES.business.radioCoopAdvertising.slug}>
                     {PAGES.business.radioCoopAdvertising.title}
@@ -134,18 +139,20 @@ const C = ({ children }) => {
                 </div>
               </div>
 
-              <a
-                className="navbar-item"
-                href="https://www.echoenergy.ca"
-                rel="noreferrer"
-                target="_blank"
-              >
-                Echo Energy <ExternalArrow />
-              </a>
+              <div className="navbar-item has-dropdown is-hoverable">
+                <NavLink link to={PAGES.media.news.slug}>
+                  {PAGES.media.default.title}
+                </NavLink>
 
-              <NavLink item to={PAGES.media.default.slug}>
-                {PAGES.media.default.title}
-              </NavLink>
+                <div className="navbar-dropdown">
+                  <NavLink item to={PAGES.media.news.slug}>
+                    {PAGES.media.news.title}
+                  </NavLink>
+                  <NavLink item to={PAGES.media.gallery.slug}>
+                    {PAGES.media.gallery.title}
+                  </NavLink>
+                </div>
+              </div>
 
               <div className="navbar-item has-dropdown is-hoverable">
                 <NavLink link to={PAGES.aboutUs.default.slug}>
@@ -164,6 +171,17 @@ const C = ({ children }) => {
                   </NavLink>
                 </div>
               </div>
+
+              <a
+                className="navbar-item"
+                href="https://www.echoenergy.ca"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <b>
+                  Echo Energy <ExternalArrow />
+                </b>
+              </a>
             </div>
 
             <div className="navbar-end">
@@ -194,6 +212,16 @@ const C = ({ children }) => {
           </div>
         </div>
       </nav>
+
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+            .navbar-brand-div:hover {
+              background-color: #FAFAFA;
+            }
+          `,
+        }}
+      />
     </>
   );
 };

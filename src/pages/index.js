@@ -67,7 +67,7 @@ const C = () => {
                         with our vision and principles.
                       </p>
                       <p>
-                        <Link to={`/${PAGES.sponsorship.default.slug}`}>
+                        <Link to={`/${PAGES.business.sponsorship.slug}`}>
                           <button className="button is-success">Inquire about Sponsorship</button>
                         </Link>
                       </p>
