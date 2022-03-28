@@ -34,7 +34,7 @@ const C = () => {
                 <a href="mailto:david@echolacombe.ca">david@echolacombe.ca</a>
               </li>
               <li>
-                <span>Thor (Director Burnham – Member at Large representative)</span>
+                <span>Thor Burnham (Director – Member at Large representative)</span>
                 <span> - </span>
                 <a href="mailto:thor@echolacombe.ca">thor@echolacombe.ca</a>
               </li>
