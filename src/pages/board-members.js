@@ -12,7 +12,7 @@ const C = () => {
             <h1>{PAGES.aboutUs.boardMembers.title}</h1>
             <ul>
               <li>
-                <span>Jared Reich (Jared Reich – Member at Large representative)</span>
+                <span>Jared Reich (President – Member at Large representative)</span>
                 <span> - </span>
                 <a href="mailto:jared@echolacombe.ca">jared@echolacombe.ca</a>
               </li>
