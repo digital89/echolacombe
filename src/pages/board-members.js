@@ -28,6 +28,13 @@ const C = () => {
               </li>
               <li>
                 <span>
+                  Jeff Hanger (Director – Lacombe and District Chamber of Commerce representative)
+                </span>
+                <span> - </span>
+                <a href="mailto:jeff@echolacombe.ca">jeff@echolacombe.ca</a>
+              </li>
+              <li>
+                <span>
                   David Jeffrey (Director - David Jeffrey – Burman University representative)
                 </span>
                 <span> - </span>
