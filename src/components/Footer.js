@@ -69,7 +69,7 @@ const C = () => {
 
           <div>
             <span>© Echo Lacombe Association</span>
-            <span> - </span>
+            {/* <span> - </span>
             <a
               href="https://digital89.com"
               title="Website by Digital89"
@@ -77,7 +77,7 @@ const C = () => {
               rel="noopener noreferrer"
             >
               Website by <strong>Digital89</strong>
-            </a>
+            </a> */}
           </div>
         </div>
       </footer>
