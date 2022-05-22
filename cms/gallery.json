@@ -1,6 +1,22 @@
 {
   "items": [
     {
+      "image": "/uploads/image-ldhs-cheque.jpg",
+      "title": "LDHS Cheque Presenting"
+    },
+    {
+      "image": "/uploads/image-fcss-cheque.jpg",
+      "title": "FCSS Cheque Presenting"
+    },
+    {
+      "image": "/uploads/image-ecovision-cheque.jpg",
+      "title": "Ecovision Cheque Goat Barn"
+    },
+    {
+      "image": "/uploads/image-christmas-parade.jpg",
+      "title": "2021 Echo Christmas Parade"
+    },
+    {
       "image": "/uploads/image-terrace-ridge-garden.jpg",
       "title": "Terrace Ridge Garden"
     },
