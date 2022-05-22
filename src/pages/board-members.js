@@ -34,9 +34,7 @@ const C = () => {
                 <a href="mailto:jeff@echolacombe.ca">jeff@echolacombe.ca</a>
               </li>
               <li>
-                <span>
-                  David Jeffrey (Director - David Jeffrey – Burman University representative)
-                </span>
+                <span>David Jeffrey (Director – Burman University representative)</span>
                 <span> - </span>
                 <a href="mailto:david@echolacombe.ca">david@echolacombe.ca</a>
               </li>
