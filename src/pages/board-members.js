@@ -54,6 +54,11 @@ const C = () => {
                 <a href="mailto:barb@echolacombe.ca">barb@echolacombe.ca</a>
               </li>
               <li>
+                <span>Nadine Waterfield (Director – Member at Large representative)</span>
+                <span> - </span>
+                <a href="mailto:nadine@echolacombe.ca">nadine@echolacombe.ca</a>
+              </li>
+              <li>
                 <span>
                   Guy Lapointe (Facilitator – City of Lacombe - Director of Community Services)
                 </span>

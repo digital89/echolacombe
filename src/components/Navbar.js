@@ -88,6 +88,9 @@ const C = ({ children }) => {
                   <NavLink item to={PAGES.business.smallBusinessEmergencyFund.slug}>
                     {PAGES.business.smallBusinessEmergencyFund.title}
                   </NavLink>
+                  <NavLink item to={PAGES.business.downtownBusinessEvents.slug}>
+                    {PAGES.business.downtownBusinessEvents.title}
+                  </NavLink>
                   <NavLink item to={PAGES.business.downtownStorefrontEnhancementProgram.slug}>
                     {PAGES.business.downtownStorefrontEnhancementProgram.title}
                   </NavLink>

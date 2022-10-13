@@ -28,6 +28,10 @@ export const PAGES = {
       title: 'Business Initiative Fund',
       slug: 'business-initiative-fund',
     },
+    downtownBusinessEvents: {
+      title: 'Downtown Business Events',
+      slug: 'downtown',
+    },
     downtownStorefrontEnhancementProgram: {
       title: 'Downtown Storefront Enhancement Program',
       slug: 'downtown-storefront-enhancement-program',
