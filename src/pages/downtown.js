@@ -22,7 +22,7 @@ const C = () => {
                 >(download / view full)</a>
                 <span>:</span>
               </h4>
-              <img src="/images/spooktacular-map.jpg" alt="Spooktacular Map" style={{ maxWidth: '600px' }}/>
+              <img src="/images/spooktacular-map.jpg" alt="Spooktacular Map" style={{ maxWidth: '600px', width: '100%' }}/>
             </p>
             <h4>Details:</h4>
             <p>
