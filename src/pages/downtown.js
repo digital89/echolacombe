@@ -10,6 +10,15 @@ const C = () => {
         <section className="section">
           <div className="container content">
             <h1>{PAGES.business.downtownBusinessEvents.title}</h1>
+
+            <h3 className="title">🎄 Light Up Lacombe 🎄</h3>
+            <p className="subtitle">
+              November 24th, 2022
+            </p>
+            <p>
+              Lacombe's signature winter event! For more information please visit <a href="https://lightuplacombe.ca">https://lightuplacombe.ca</a>
+            </p>
+
             <h3 className="title">🌛 Moonlight Madness 🌛</h3>
             <p className="subtitle">November 24th, 2022</p>
             {/* <p>More details...</p> */}
