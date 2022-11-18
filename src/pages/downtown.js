@@ -52,7 +52,7 @@ const C = () => {
 
                 <li><b>Health fitters:</b> will be open and celebrating Moonlight Madness.</li>
 
-                <li><b>Reds Source for Sports:</b> will be open and celebrating Moonlight Madness.</li>
+                <li><b>Reds Source for Sports:</b> will be open until 10 pm and celebrating Moonlight Madness.</li>
 
                 <li><b>The Studio by Elysian & Luxe:</b> will be open and celebrating Moonlight Madness. We are offering retail sales, a giveaway basket or two, and a gift with purchase.</li>
 
