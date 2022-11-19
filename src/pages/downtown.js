@@ -36,7 +36,7 @@ const C = () => {
             <h4>Details:</h4>
             <p>
               <ul>
-                <li><b>5024 General Store:</b> Candy, popcorn and Classic Halloween Specials showing on the projector.</li>
+                <li><b>5024 General Store:</b> We will be offering a free gift with purchase over $100, holiday movies on the projector, holiday treats and a spin to win wheel!</li>
 
                 <li><b>Elite Bridal:</b> We will be open late (usually until 10 pm). We will have moonlight madness sales and Black Friday sales that night.</li>
 
@@ -79,6 +79,10 @@ const C = () => {
 
                 <li><b>RAE'VeN Co. Apothecary:</b> will stay open until 8:30 and we will be doing a craft of making Yuletide
                 intention pinecones from 6-8.</li>
+
+                <li><b>Milly Oak Cafe & Catering:</b> will be open and celebrating Moonlight Madness.</li>
+
+                <li><b>Gift Smack:</b> Pick your shopping discount from the tree and one lucky shopper will win their purchase!</li>
               </ul>
             </p>
           </div>
