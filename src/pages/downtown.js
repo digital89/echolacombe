@@ -16,11 +16,11 @@ const C = () => {
               November 24th, 2022
             </p>
             <p>
-              Lacombe's signature winter event! For more information please visit <a href="https://lightuplacombe.ca">https://lightuplacombe.ca</a>
+              Lacombe's signature winter event! For more information please visit <a href="https://lightuplacombe.ca" target="_blank" rel="noreferrer">https://lightuplacombe.ca</a>
             </p>
 
             <h3 className="title">🌛 Moonlight Madness 🌛</h3>
-            <p className="subtitle">November 24th, 2022</p>
+            <p className="subtitle">November 24th, 2022 10am-9pm</p>
             {/* <p>More details...</p> */}
             <p>
               <h4>
@@ -33,10 +33,12 @@ const C = () => {
               </h4>
               <img src="/images/moonlight-madness-map.jpg" alt="Moonlight Madness Map" style={{ maxWidth: '600px', width: '100%' }}/>
             </p>
-            <h4>Details:</h4>
+            <h4>Participating Businesses & Locations:</h4>
             <p>
               <ul>
-                <li><b>5024 General Store:</b> We will be offering a free gift with purchase over $100, holiday movies on the projector, holiday treats and a spin to win wheel!</li>
+                <li><b>Flatiron Building:</b> Opening our <a href="https://lacombemuseum.com/event/christmas-of-yore-market/" target="_blank" rel="noreferrer">Christmas of Yore Market</a> - free apple cider/hot chocolate and will be open until 9pm. We will also have our <a href="https://lacombemuseum.com/event/2022-gingerbread-house-contest/" target="_blank" rel="noreferrer">3rd Annual Gingerbread House Contest</a> at the Flatiron and the <a href="https://lacombemuseum.com/event/winter-story-time/" target="_blank" rel="noreferrer">Indigenous Winter Storytime</a> with bannock and elders sharing oral histories on the 24th. <a href="https://twitter.com/LacombeMuseums" target="_blank" rel="noreferrer">More info on our Twitter!</a></li>
+
+                <li><b>5024 General Store:</b> will be participating with a shopping discount of 10%, and every purchase will be an entry to win one of our Christmas Boxes that includes a bag of 5024 coffee, a gift card, a mug, and other goodies. Offering a free gift with purchase over $100, holiday movies on the projector, holiday treats and a spin to win wheel!</li>
 
                 <li><b>Elite Bridal:</b> We will be open late (usually until 10 pm). We will have moonlight madness sales and Black Friday sales that night.</li>
 
@@ -46,8 +48,6 @@ const C = () => {
                 be included.</li>
 
                 <li><b>Oodles of Chocolates:</b> will be open to the public. Our shop will be filled with all your favourite Christmas Treats. We will also be offering our delicious Hot Chocolate for purchase.</li>
-
-                <li><b>5024 General Store:</b> will be participating with a shopping discount of 10%, and every purchase will be an entry to win one of our Christmas Boxes that includes a bag of 5024 coffee, a gift card, a mug, and other goodies.</li>
 
                 <li><b>The Grooming Shop:</b> will be open and celebrating Moonlight Madness.</li>
 

@@ -30,7 +30,7 @@ const C = () => {
           <div className="container content">
             <h3>What is the Echo Lacombe Association?</h3>
             <p>
-              The Echo Lacombe Association is a group of local volunteers who facilitate to function
+              The Echo Lacombe Association is a group of local volunteers who facilitate the function
               of Echo Energy and Echo Internet, and in turn organize and execute local projects.
             </p>
             <br />
