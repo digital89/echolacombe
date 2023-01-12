@@ -97,7 +97,7 @@ const C = () => {
                     >
                       Downtown Storefront Enhancement Program
                     </a>{' '}
-                    Application. <b>The deadline for submissions is April 8, 2022.</b>
+                    Application. <b>The deadline for submissions is April 7, 2023.</b>
                   </span>
                   <br />
                   <br />
@@ -127,7 +127,7 @@ const C = () => {
               <span>City of Lacombe</span>
               <br />
               <span>
-                <a href="tel:+14037821263">(403) 782-1263</a>
+                <a href="tel:+14037821295">(403) 782-1295</a>
               </span>
               <br />
               <span>
