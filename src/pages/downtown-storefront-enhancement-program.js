@@ -92,24 +92,14 @@ const C = () => {
                   <span>
                     Fill out and submit the{' '}
                     <a
-                      href="/files/downtown-storefront-enhancement-program-application.pdf"
+                      href="https://forms.gle/g1xUgn5pxkjz6pYa8"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       Downtown Storefront Enhancement Program
                     </a>{' '}
                     Application. <b>The deadline for submissions is April 7, 2023.</b>
                   </span>
-                  <br />
-                  <br />
-                  <span>
-                    <b>
-                      (Please note: If you are having trouble opening the linked file in your web
-                      browser you will need to manually download the file by right clicking on the
-                      link and selecting the 'Save link as ...' option.)
-                    </b>
-                  </span>
-                  <br />
-                  <br />
                 </>,
                 'Include the land title certificate. If the applicant is not the owner, please ensure the property owner authorization portion of the application form is completed.',
                 'Submit "Before" photos of the property.',
