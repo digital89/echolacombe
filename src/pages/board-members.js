@@ -28,20 +28,15 @@ const C = () => {
               </li>
               <li>
                 <span>
-                  Jeff Hanger (Director – Lacombe and District Chamber of Commerce representative)
+                  Mike Thibeau (Director – Lacombe and District Chamber of Commerce representative)
                 </span>
                 <span> - </span>
-                <a href="mailto:jeff@echolacombe.ca">jeff@echolacombe.ca</a>
+                <a href="mailto:mike@echolacombe.ca">mike@echolacombe.ca</a>
               </li>
               <li>
                 <span>David Jeffrey (Director – Burman University representative)</span>
                 <span> - </span>
                 <a href="mailto:david@echolacombe.ca">david@echolacombe.ca</a>
-              </li>
-              <li>
-                <span>Thor Burnham (Director – Member at Large representative)</span>
-                <span> - </span>
-                <a href="mailto:thor@echolacombe.ca">thor@echolacombe.ca</a>
               </li>
               <li>
                 <span>Kim Kay (Director – Member at Large representative)</span>
