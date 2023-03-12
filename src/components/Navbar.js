@@ -133,11 +133,11 @@ const C = ({ children }) => {
                     {PAGES.community.communityWellnessApplication.title}
                   </NavLink>
                   <hr className="navbar-divider" />
-                  <NavLink item to={PAGES.community.merchYourWayProgram.slug}>
-                    {PAGES.community.merchYourWayProgram.title}
-                  </NavLink>
                   <NavLink item to={PAGES.community.foodRescue.slug}>
                     {PAGES.community.foodRescue.title}
+                  </NavLink>
+                  <NavLink item to={PAGES.community.merchYourWayProgram.slug}>
+                    {PAGES.community.merchYourWayProgram.title}
                   </NavLink>
                 </div>
               </div>

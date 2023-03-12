@@ -23,8 +23,6 @@ collections:
           - { name: 'contactEmail', label: 'Email', widget: 'string' }
           - { name: 'contactPhone', label: 'Phone Number', widget: 'string' }
           - { name: 'contactPhoneRaw', label: 'Phone Number Raw', widget: 'string' }
-          - { name: 'pageHomeHeroTitle', label: 'Page Home Hero Title', widget: 'string' }
-          - { name: 'pageHomeHeroSubtitle', label: 'Page Home Hero Subtitle', widget: 'string' }
           - { name: 'seoDescription', label: 'SEO Description', widget: 'text' }
           - { name: 'seoTitle', label: 'SEO Title', widget: 'string' }
 
@@ -52,3 +50,9 @@ collections:
               - { name: 'title', label: 'News Item Title', widget: 'string' }
               - { name: 'file', label: 'News Item File', widget: 'file' }
               - { name: 'url', label: 'News Item External URL', widget: 'string' }
+
+      - name: 'food-rescue'
+        label: 'Food Rescue'
+        file: 'cms/food-rescue.json'
+        fields:
+          - { name: 'test', label: 'Test Content...', widget: 'string' }

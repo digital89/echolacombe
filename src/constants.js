@@ -63,13 +63,13 @@ export const PAGES = {
       title: 'Community Wellness Application',
       slug: 'community-wellness-application',
     },
-    merchYourWayProgram: {
-      title: 'Merch Your Way Program',
-      slug: 'merch-your-way-program',
-    },
     foodRescue: {
       title: 'Food Rescue',
       slug: 'food-rescue',
+    },
+    merchYourWayProgram: {
+      title: 'Merch Your Way Program',
+      slug: 'merch-your-way-program',
     },
   },
   media: {

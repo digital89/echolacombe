@@ -26,7 +26,7 @@ const C = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className="button is-danger is-large">
+                <button className="button is-info is-large">
                   Apply Here! <ExternalArrow />
                 </button>
               </a>

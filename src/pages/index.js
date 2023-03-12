@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import { pageHomeHeroTitle, pageHomeHeroSubtitle } from '../../cms/data';
 import Layout from '../components/Layout';
+import ExternalArrow from '../components/ExternalArrow';
 import { PAGES } from '../constants';
 import styles from '../styles';
 
@@ -13,15 +13,15 @@ const C = () => {
         <section className="hero is-link">
           <div className="hero-body">
             <div className="container">
-              <p>
+              {/* <p>
                 <img
                   className="hero-image"
                   src="/images/logo-app.svg"
                   alt="Echo Lacombe Association Logo"
                 />
-              </p>
-              <h1 className="title">{pageHomeHeroTitle}</h1>
-              <h2 className="subtitle">{pageHomeHeroSubtitle}</h2>
+              </p> */}
+              <h1 className="title">Welcome to the <u>Echo Lacombe Association</u> website!</h1>
+              <h2 className="subtitle">Our vision is to improve the quality of life within Lacombe by fostering a collaborative environment focused on cultivating innovation, nurturing a business-friendly culture, promoting sustainable growth and creating a safe, inclusive, vibrant and healthy community.</h2>
             </div>
           </div>
         </section>
@@ -40,6 +40,25 @@ const C = () => {
                   <div className="card-content">
                     <div className="content">
                       <h4>
+                        Looking for information about the <u>Echo Food Rescue</u>?
+                      </h4>
+                      <p>
+                        <Link to={`/${PAGES.community.foodRescue.slug}`}>
+                          <button className="button is-info">Go to the Echo Food Rescue page  <ExternalArrow /></button>
+                        </Link>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+
+              <div className="columns">
+              <div className="column">
+                <div className="card">
+                  <div className="card-content">
+                    <div className="content">
+                      <h4>
                         Get your project rolling with a <u>Community Grant!</u>
                       </h4>
                       <p>
@@ -47,7 +66,7 @@ const C = () => {
                       </p>
                       <p>
                         <Link to={`/${PAGES.community.communityGrants.slug}`}>
-                          <button className="button is-primary">Apply for a Community Grant</button>
+                          <button className="button is-primary">Apply for a Community Grant  <ExternalArrow /></button>
                         </Link>
                       </p>
                     </div>
@@ -63,12 +82,11 @@ const C = () => {
                         Looking for <u>sponsorship?</u>
                       </h4>
                       <p>
-                        Echo Lacombe looks to support local events, groups and facilities that align
-                        with our vision and principles.
+                        Echo Lacombe looks to support local events, groups and facilities that align with our vision and principles.
                       </p>
                       <p>
                         <Link to={`/${PAGES.business.sponsorship.slug}`}>
-                          <button className="button is-success">Inquire about Sponsorship</button>
+                          <button className="button is-success">Inquire about Sponsorship  <ExternalArrow /></button>
                         </Link>
                       </p>
                     </div>
