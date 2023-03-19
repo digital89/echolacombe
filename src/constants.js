@@ -64,7 +64,7 @@ export const PAGES = {
       slug: 'community-wellness-application',
     },
     foodRescue: {
-      title: 'Food Rescue',
+      title: 'Echo Food Rescue',
       slug: 'food-rescue',
     },
     merchYourWayProgram: {

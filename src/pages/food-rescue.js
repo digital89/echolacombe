@@ -1,6 +1,14 @@
 import React from 'react';
+// import { Link } from 'gatsby';
 
-// import {  } from '../../cms/food-rescue';
+import {
+  contactName,
+  contactPhone,
+  contactPhoneRaw,
+  contactEmail,
+  sections,
+} from '../../cms/food-rescue.json';
+import ExternalArrow from '../components/ExternalArrow';
 import Layout from '../components/Layout';
 import { PAGES } from '../constants';
 
@@ -8,62 +16,75 @@ const C = () => {
   return (
     <>
       <Layout>
+        <section id="food-rescue-wallpaper" className="section" />
+
         <section className="section">
           <div className="container content">
-            <h1>{PAGES.community.foodRescue.title}</h1>
-            <p>
-              Food security is a significant social issue faced by communities across Canada.
-              Increased focus on greenhouse gas emissions has highlighted the harmful impact food
-              waste has on the environment. Producers and retailers dispose of large amounts of
-              consumable food due to minor flaws and defects in appearance before shipping to
-              retailers. Additionally, grocery stores remove food from shelves and discard it when
-              it is past its “best before” date; most items have not spoiled or expired and are
-              consumable well beyond the date listed. Restaurants also dispose of unused food
-              supplies at the end of the business day, as industry standards are to use fresh
-              ingredients daily.
-            </p>
-            <p>
-              The Echo Food Rescue collects these food items and redistributes to our community that
-              would otherwise go to waste.
-            </p>
+            <h1><u>{PAGES.community.foodRescue.title}</u></h1>
 
             <p>
-              <img src="/images/logo-food-rescue.svg" width="200" alt="Echo Food Rescue Logo" />
+              <a href="https://www.facebook.com/people/Echo-Food-Rescue/100071395141944" target="_blank" rel="noopener noreferrer">Facebook Page <ExternalArrow /></a>
             </p>
 
-            <h3>Links & Resources</h3>
-            <ul>
-              <li>
-                <a
-                  href="https://secondharvest.ca/foodrescue/givefood/"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  Donate – Give Food
-                </a>
-              </li>
-              <li>Supporters (Information Coming Soon!)</li>
-              <li>
-                <a href="https://forms.gle/sbs6HPU8yAqrYvJu6" rel="noreferrer" target="_blank">
-                  Volunteers
-                </a>
-              </li>
-            </ul>
+            {sections.map(section => {
+              return (
+                <>
+                  <h3>{section.title}</h3>
+                  <p className="food-rescue-section-p">{section.content}</p>
+                </>
+              )
+            })}
 
-            <h3>Contact</h3>
-            <p>For additional information on the Food Rescue Program please contact:</p>
+            <h3>Contact Information</h3>
             <p>
-              <span>David Jeffrey</span>
+              <span>{contactName}</span>
               <br />
               <span>
-                <a href="tel:+14035986287">(403) 598-6287</a>
+                <a href={`tel:${contactPhoneRaw}`}>{contactPhone}</a>
               </span>
               <br />
-              <a href="mailto:david@echolacombe.ca">david@echolacombe.ca</a>
+              <a href={`mailto:${contactEmail}`}>{contactEmail}</a>
             </p>
+
+            <h3>Location</h3>
+            <div>
+              <iframe
+                allowFullScreen
+                frameBorder="0"
+                marginHeight="0"
+                marginWidth="0"
+                scrolling="no"
+                src="https://maps.google.com/maps?q=5404%2056%20Ave,%20Lacombe,%20AB%20T4L%201M1&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                style={{
+                  border: 'none',
+                  height: '300px',
+                  width: '100%',
+                }}
+                title="Google Maps View"
+              />
+            </div>
+
           </div>
         </section>
       </Layout>
+
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+            #food-rescue-wallpaper {
+              height: 200px;
+              background-image: url("/images/food-rescue-vegetables.jpg");
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center center;
+            }
+
+            .food-rescue-section-p {
+              white-space: pre-wrap;
+            }
+          `,
+        }}
+      />
     </>
   );
 };

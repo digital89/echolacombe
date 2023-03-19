@@ -51,9 +51,9 @@ const C = () => {
                   </div>
                 </div>
               </div>
-              </div>
+            </div>
 
-              <div className="columns">
+            <div className="columns">
               <div className="column">
                 <div className="card">
                   <div className="card-content">

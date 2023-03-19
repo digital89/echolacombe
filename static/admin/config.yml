@@ -20,9 +20,9 @@ collections:
         file: 'cms/data.json'
         fields:
           - { name: 'domainName', label: 'Domain Name', widget: 'string' }
-          - { name: 'contactEmail', label: 'Email', widget: 'string' }
-          - { name: 'contactPhone', label: 'Phone Number', widget: 'string' }
-          - { name: 'contactPhoneRaw', label: 'Phone Number Raw', widget: 'string' }
+          - { name: 'contactEmail', label: 'Contact Email', widget: 'string' }
+          - { name: 'contactPhone', label: 'Contact Phone Number', widget: 'string' }
+          - { name: 'contactPhoneRaw', label: 'Contact Phone Number Raw', widget: 'string' }
           - { name: 'seoDescription', label: 'SEO Description', widget: 'text' }
           - { name: 'seoTitle', label: 'SEO Title', widget: 'string' }
 
@@ -55,4 +55,14 @@ collections:
         label: 'Food Rescue'
         file: 'cms/food-rescue.json'
         fields:
-          - { name: 'test', label: 'Test Content...', widget: 'string' }
+          - { name: 'contactName', label: 'Contact Name', widget: 'string' }
+          - { name: 'contactPhone', label: 'Contact Phone Number', widget: 'string' }
+          - { name: 'contactPhoneRaw', label: 'Contact Phone Number Raw', widget: 'string' }
+          - { name: 'contactEmail', label: 'Contact Email', widget: 'string' }
+          - name: 'sections'
+            label: 'Sections'
+            label_singular: 'Section'
+            widget: 'list'
+            fields:
+              - { name: 'title', label: 'Section Title', widget: 'string' }
+              - { name: 'content', label: 'Section Content', widget: 'markdown' }
