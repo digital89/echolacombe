@@ -30,7 +30,8 @@ const C = () => {
             </p>
             <p>
               <a
-                href="https://docs.google.com/forms/d/1BF80BJLJrranDIL3zwd60X--RQH85KxQlXZFLFnDh2Y"
+                data-href-old="https://docs.google.com/forms/d/1BF80BJLJrranDIL3zwd60X--RQH85KxQlXZFLFnDh2Y"
+                href="https://form.jotform.com/240276489987073"
                 target="_blank"
                 rel="noreferrer"
               >

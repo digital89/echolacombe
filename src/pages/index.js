@@ -20,8 +20,15 @@ const C = () => {
                   alt="Echo Lacombe Association Logo"
                 />
               </p> */}
-              <h1 className="title">Welcome to the <u>Echo Lacombe Association</u> website!</h1>
-              <h2 className="subtitle">Our vision is to improve the quality of life within Lacombe by fostering a collaborative environment focused on cultivating innovation, nurturing a business-friendly culture, promoting sustainable growth and creating a safe, inclusive, vibrant and healthy community.</h2>
+              <h1 className="title">
+                Welcome to the <u>Echo Lacombe Association</u> website!
+              </h1>
+              <h2 className="subtitle">
+                Our vision is to improve the quality of life within Lacombe by fostering a
+                collaborative environment focused on cultivating innovation, nurturing a
+                business-friendly culture, promoting sustainable growth and creating a safe,
+                inclusive, vibrant and healthy community.
+              </h2>
             </div>
           </div>
         </section>
@@ -30,8 +37,9 @@ const C = () => {
           <div className="container content">
             <h3>What is the Echo Lacombe Association?</h3>
             <p>
-              The Echo Lacombe Association is a group of local volunteers who facilitate the function
-              of Echo Energy and Echo Internet, and in turn organize and execute local projects.
+              The Echo Lacombe Association is a group of local volunteers who facilitate the
+              function of Echo Energy and Echo Internet, and in turn organize and execute local
+              projects.
             </p>
             <br />
             <div className="columns">
@@ -43,9 +51,20 @@ const C = () => {
                         Looking for information about the <u>Echo Food Rescue</u>?
                       </h4>
                       <p>
-                        <Link to={`/${PAGES.community.foodRescue.slug}`}>
-                          <button className="button is-info">Go to the Echo Food Rescue page  <ExternalArrow /></button>
-                        </Link>
+                        {/* <Link to={`/${PAGES.community.foodRescue.slug}`}>
+                          <button className="button is-info">
+                            Go to the Echo Food Rescue page <ExternalArrow />
+                          </button>
+                        </Link> */}
+                        <a
+                          href="https://www.echofoodrescue.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <button className="button is-info">
+                            Go to the Echo Food Rescue Homepage <ExternalArrow />
+                          </button>
+                        </a>
                       </p>
                     </div>
                   </div>
@@ -66,7 +85,9 @@ const C = () => {
                       </p>
                       <p>
                         <Link to={`/${PAGES.community.communityGrants.slug}`}>
-                          <button className="button is-primary">Apply for a Community Grant  <ExternalArrow /></button>
+                          <button className="button is-primary">
+                            Apply for a Community Grant <ExternalArrow />
+                          </button>
                         </Link>
                       </p>
                     </div>
@@ -82,11 +103,14 @@ const C = () => {
                         Looking for <u>sponsorship?</u>
                       </h4>
                       <p>
-                        Echo Lacombe looks to support local events, groups and facilities that align with our vision and principles.
+                        Echo Lacombe looks to support local events, groups and facilities that align
+                        with our vision and principles.
                       </p>
                       <p>
                         <Link to={`/${PAGES.business.sponsorship.slug}`}>
-                          <button className="button is-success">Inquire about Sponsorship  <ExternalArrow /></button>
+                          <button className="button is-success">
+                            Inquire about Sponsorship <ExternalArrow />
+                          </button>
                         </Link>
                       </p>
                     </div>
@@ -95,7 +119,7 @@ const C = () => {
               </div>
             </div>
 
-            <br />
+            {/* <br />
             <h3>New Initiatives:</h3>
             <h4>LEAP (Lacombe Economic Action Partnership)</h4>
             <p>
@@ -120,7 +144,7 @@ const C = () => {
               businesses to come together to gain experience, while benefiting some of Lacombe's top
               youthful minds. To find out more information or to participate, please fill out the
               form below.
-            </p>
+            </p> */}
           </div>
         </section>
       </Layout>

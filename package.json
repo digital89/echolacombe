@@ -4,6 +4,10 @@
   "private": true,
   "description": "echolacombe website",
   "author": "Digital89",
+  "engines": {
+    "npm": "8.19.4",
+    "node": "16.20.2"
+  },
   "scripts": {
     "dev": "gatsby develop",
     "start": "gatsby develop",

@@ -20,19 +20,31 @@ const C = () => {
 
         <section className="section">
           <div className="container content">
-            <h1><u>{PAGES.community.foodRescue.title}</u></h1>
+            <h1>
+              <u>{PAGES.community.foodRescue.title}</u>
+            </h1>
 
             <p>
-              <a href="https://www.facebook.com/people/Echo-Food-Rescue/100071395141944" target="_blank" rel="noopener noreferrer">Facebook Page <ExternalArrow /></a>
+              <a href="https://www.echofoodrescue.com/" target="_blank" rel="noopener noreferrer">
+                Echo Food Rescue Homepage <ExternalArrow />
+              </a>
+              <br />
+              <a
+                href="https://www.facebook.com/people/Echo-Food-Rescue/100071395141944"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Facebook Page <ExternalArrow />
+              </a>
             </p>
 
-            {sections.map(section => {
+            {sections.map((section) => {
               return (
                 <>
                   <h3>{section.title}</h3>
                   <p className="food-rescue-section-p">{section.content}</p>
                 </>
-              )
+              );
             })}
 
             <h3>Contact Information</h3>
@@ -63,7 +75,6 @@ const C = () => {
                 title="Google Maps View"
               />
             </div>
-
           </div>
         </section>
       </Layout>

@@ -91,14 +91,10 @@ const C = () => {
                 <>
                   <span>
                     Fill out and submit the{' '}
-                    <a
-                      href="https://forms.gle/g1xUgn5pxkjz6pYa8"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
+                    <a href="https://forms.gle/g1xUgn5pxkjz6pYa8" target="_blank" rel="noreferrer">
                       Downtown Storefront Enhancement Program
                     </a>{' '}
-                    Application. <b>The deadline for submissions is April 7, 2023.</b>
+                    Application. <b>The deadline for submissions is April 5, 2024.</b>
                   </span>
                 </>,
                 'Include the land title certificate. If the applicant is not the owner, please ensure the property owner authorization portion of the application form is completed.',
