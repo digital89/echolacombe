@@ -91,7 +91,11 @@ const C = () => {
                 <>
                   <span>
                     Fill out and submit the{' '}
-                    <a href="https://forms.gle/g1xUgn5pxkjz6pYa8" target="_blank" rel="noreferrer">
+                    <a
+                      href="https://form.jotform.com/240245791153050"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       Downtown Storefront Enhancement Program
                     </a>{' '}
                     Application. <b>The deadline for submissions is April 5, 2024.</b>
