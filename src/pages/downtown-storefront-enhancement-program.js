@@ -1,5 +1,6 @@
 import React from 'react';
 
+import {contactEmail, contactName, contactPhone, contactPhoneRaw } from '../../cms/data';
 import Layout from '../components/Layout';
 import ListItems from '../components/ListItems';
 import { PAGES } from '../constants';
@@ -110,18 +111,16 @@ const C = () => {
 
             <p>For more information please contact:</p>
             <p>
-              <span>Guy Lapointe</span>
-              <br />
-              <span>Director of Community Services</span>
+              <span>{{contactName}}</span>
               <br />
               <span>City of Lacombe</span>
               <br />
               <span>
-                <a href="tel:+14037821295">(403) 782-1295</a>
+                <a href={`tel:${contactPhoneRaw}`}>{contactPhone}</a>
               </span>
               <br />
               <span>
-                <a href="mailto:guy@echolacombe.ca">guy@echolacombe.ca</a>
+                <a href={`mailto:${contactEmail}`}>{contactEmail}</a>
               </span>
             </p>
           </div>
