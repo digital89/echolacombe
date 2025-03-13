@@ -111,7 +111,7 @@ const C = () => {
 
             <p>For more information please contact:</p>
             <p>
-              <span>{{contactName}}</span>
+              <span>{contactName}</span>
               <br />
               <span>City of Lacombe</span>
               <br />
