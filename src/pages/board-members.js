@@ -12,9 +12,7 @@ const C = () => {
             <h1>{PAGES.aboutUs.boardMembers.title}</h1>
             <ul>
               <li>
-                <span>
-                  Iwalani Post (Facilitator – City of Lacombe - Director of Community Services)
-                </span>
+                <span>Iwalani Post (Facilitator – City of Lacombe)</span>
                 <span> - </span>
                 <a href="mailto:iwalani@echolacombe.ca">iwalani@echolacombe.ca</a>
               </li>
