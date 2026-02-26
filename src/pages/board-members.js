@@ -12,9 +12,9 @@ const C = () => {
             <h1>{PAGES.aboutUs.boardMembers.title}</h1>
             <ul>
               <li>
-                <span>Iwalani Post (Facilitator – City of Lacombe)</span>
+                <span>Steve Loutitt (Facilitator – City of Lacombe)</span>
                 <span> - </span>
-                <a href="mailto:iwalani@echolacombe.ca">iwalani@echolacombe.ca</a>
+                <a href="mailto:steve@echolacombe.ca">steve@echolacombe.ca</a>
               </li>
               <li>
                 <span>Jared Reich (President – Member at Large representative)</span>
@@ -27,14 +27,14 @@ const C = () => {
                 <a href="mailto:barb@echolacombe.ca">barb@echolacombe.ca</a>
               </li>
               <li>
-                <span>Thalia Hibbs (Director – City of Lacombe Council representative)</span>
+                <span>Justin de Bresser (Director – City of Lacombe Council representative)</span>
                 <span> - </span>
-                <a href="mailto:thalia@echolacombe.ca">thalia@echolacombe.ca</a>
+                <a href="mailto:justin@echolacombe.ca">justin@echolacombe.ca</a>
               </li>
               <li>
-                <span>David Jeffrey (Director – Burman University representative)</span>
+                <span>Pratishta Manukonda (Director – Burman University representative)</span>
                 <span> - </span>
-                <a href="mailto:david@echolacombe.ca">david@echolacombe.ca</a>
+                <a href="mailto:pratishta@echolacombe.ca">pratishta@echolacombe.ca</a>
               </li>
               <li>
                 <span>Kim Kay (Director – Member at Large representative)</span>
