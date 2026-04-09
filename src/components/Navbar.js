@@ -77,20 +77,11 @@ const C = ({ children }) => {
               </NavLink> */}
 
               <div className="navbar-item has-dropdown is-hoverable">
-                <NavLink link to={PAGES.business.businessInitiativeFund.slug}>
+                <NavLink link to={PAGES.business.downtownStorefrontEnhancementProgram.slug}>
                   {PAGES.business.default.title}
                 </NavLink>
 
                 <div className="navbar-dropdown">
-                  <NavLink item to={PAGES.business.businessInitiativeFund.slug}>
-                    {PAGES.business.businessInitiativeFund.title}
-                  </NavLink>
-                  <NavLink item to={PAGES.business.smallBusinessEmergencyFund.slug}>
-                    {PAGES.business.smallBusinessEmergencyFund.title}
-                  </NavLink>
-                  <NavLink item to={PAGES.business.downtownBusinessEvents.slug}>
-                    {PAGES.business.downtownBusinessEvents.title}
-                  </NavLink>
                   <NavLink item to={PAGES.business.downtownStorefrontEnhancementProgram.slug}>
                     {PAGES.business.downtownStorefrontEnhancementProgram.title}
                   </NavLink>
@@ -100,23 +91,6 @@ const C = ({ children }) => {
                   <NavLink item to={PAGES.business.radioCoopAdvertising.slug}>
                     {PAGES.business.radioCoopAdvertising.title}
                   </NavLink>
-                  <hr className="navbar-divider" />
-                  <a
-                    className="navbar-item"
-                    href="https://smblacombe.ca"
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    Social Media Breakfast Lacombe <ExternalArrow />
-                  </a>
-                  <a
-                    className="navbar-item"
-                    href="https://lacombe.ecdev.org"
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    Lacombe Business Toolkit <ExternalArrow />
-                  </a>
                 </div>
               </div>
 
@@ -129,15 +103,9 @@ const C = ({ children }) => {
                   <NavLink item to={PAGES.community.communityGrants.slug}>
                     {PAGES.community.communityGrants.title}
                   </NavLink>
-                  <NavLink item to={PAGES.community.communityWellnessApplication.slug}>
-                    {PAGES.community.communityWellnessApplication.title}
-                  </NavLink>
                   <hr className="navbar-divider" />
                   <NavLink item to={PAGES.community.foodRescue.slug}>
                     {PAGES.community.foodRescue.title}
-                  </NavLink>
-                  <NavLink item to={PAGES.community.merchYourWayProgram.slug}>
-                    {PAGES.community.merchYourWayProgram.title}
                   </NavLink>
                 </div>
               </div>
@@ -163,9 +131,6 @@ const C = ({ children }) => {
                 </NavLink>
 
                 <div className="navbar-dropdown">
-                  <NavLink item to={PAGES.aboutUs.communityEconomicDevelopmentStrategy.slug}>
-                    {PAGES.aboutUs.communityEconomicDevelopmentStrategy.title}
-                  </NavLink>
                   <NavLink item to={PAGES.aboutUs.boardMembers.slug}>
                     {PAGES.aboutUs.boardMembers.titleNav}
                   </NavLink>
@@ -189,19 +154,6 @@ const C = ({ children }) => {
 
             <div className="navbar-end">
               <div className="navbar-item">
-                <a
-                  href="https://twitter.com/echoenergy14"
-                  rel="noreferrer"
-                  target="_blank"
-                  style={{ marginRight: '10px' }}
-                >
-                  <img
-                    src="/images/icon-twitter.svg"
-                    alt="Twitter Icon"
-                    height="40px"
-                    width="40px"
-                  />
-                </a>
                 <a href="https://www.facebook.com/echolacombe/" rel="noreferrer" target="_blank">
                   <img
                     src="/images/icon-facebook.svg"

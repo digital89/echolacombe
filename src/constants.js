@@ -4,10 +4,6 @@ export const PAGES = {
       title: 'About Us',
       slug: 'about-us',
     },
-    communityEconomicDevelopmentStrategy: {
-      title: 'Community Economic Development Strategy',
-      slug: 'community-economic-development-strategy',
-    },
     boardMembers: {
       title: 'Echo Lacombe Association Board Members',
       titleNav: 'Board Members',
@@ -24,14 +20,6 @@ export const PAGES = {
       title: 'Business',
       slug: 'business',
     },
-    businessInitiativeFund: {
-      title: 'Business Initiative Fund',
-      slug: 'business-initiative-fund',
-    },
-    downtownBusinessEvents: {
-      title: 'Downtown Business Events',
-      slug: 'downtown',
-    },
     downtownStorefrontEnhancementProgram: {
       title: 'Downtown Storefront Enhancement Program',
       slug: 'downtown-storefront-enhancement-program',
@@ -45,10 +33,6 @@ export const PAGES = {
       title: 'Radio Co-Op Advertising',
       slug: 'radio-coop-advertising',
     },
-    smallBusinessEmergencyFund: {
-      title: 'Small Business Emergency Fund',
-      slug: 'small-business-emergency-fund',
-    },
   },
   community: {
     default: {
@@ -59,17 +43,9 @@ export const PAGES = {
       title: 'Community Grants',
       slug: 'community-grants',
     },
-    communityWellnessApplication: {
-      title: 'Community Wellness Application',
-      slug: 'community-wellness-application',
-    },
     foodRescue: {
       title: 'Echo Food Rescue',
       slug: 'food-rescue',
-    },
-    merchYourWayProgram: {
-      title: 'Merch Your Way Program',
-      slug: 'merch-your-way-program',
     },
   },
   media: {
