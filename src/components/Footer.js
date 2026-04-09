@@ -11,35 +11,6 @@ const C = () => {
           <div>
             <div className="columns">
               <div className="column">
-                <h4>Helpful links:</h4>
-                <div>
-                  <a href="https://www.lacombe.ca" rel="noreferrer" target="_blank">
-                    City of Lacombe <ExternalArrow />
-                  </a>
-                </div>
-                <div>
-                  <a href="https://www.lacombechamber.ca" rel="noreferrer" target="_blank">
-                    Lacombe Chamber of Commerce <ExternalArrow />
-                  </a>
-                </div>
-                <div>
-                  <a href="https://www.burmanu.ca" rel="noreferrer" target="_blank">
-                    Burman University <ExternalArrow />
-                  </a>
-                </div>
-                <div>
-                  <a href="https://lacombe.ecdev.org" rel="noreferrer" target="_blank">
-                    Lacombe Economic Development <ExternalArrow />
-                  </a>
-                </div>
-                <div>
-                  <a href="https://www.lacombetourism.com" rel="noreferrer" target="_blank">
-                    Lacombe Tourism <ExternalArrow />
-                  </a>
-                </div>
-              </div>
-
-              <div className="column">
                 <h4>Contact us:</h4>
                 <div>
                   <span>Echo Lacombe Association</span>
