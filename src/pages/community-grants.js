@@ -6,6 +6,8 @@ import Layout from '../components/Layout';
 import ListItems from '../components/ListItems';
 import { PAGES } from '../constants';
 
+const FORM_LINK = 'https://forms.gle/S5YzWYH4HbGTv9RH6';
+
 const C = () => {
   return (
     <>
@@ -30,8 +32,7 @@ const C = () => {
             </p>
             <p>
               <a
-                data-href-old="https://docs.google.com/forms/d/1BF80BJLJrranDIL3zwd60X--RQH85KxQlXZFLFnDh2Y"
-                href="https://form.jotform.com/240276489987073"
+                href={FORM_LINK}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -116,7 +117,7 @@ const C = () => {
             <p>
               You are invited to submit your proposals{' '}
               <a
-                href="https://docs.google.com/forms/d/1BF80BJLJrranDIL3zwd60X--RQH85KxQlXZFLFnDh2Y"
+                href={FORM_LINK}
                 target="_blank"
                 rel="noreferrer"
               >
