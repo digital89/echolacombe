@@ -100,7 +100,7 @@ const C = () => {
                     >
                       Downtown Storefront Enhancement Program Application <ExternalArrow />
                     </a>{' '}
-                    (<b>the deadline for submissions is the last day of April every year.</b>)
+                    (<b>the deadline for submissions is the last day of April every year</b>).
                   </span>
                 </>,
                 'Include the land title certificate. If the applicant is not the owner, please ensure the property owner authorization portion of the application form is completed.',
