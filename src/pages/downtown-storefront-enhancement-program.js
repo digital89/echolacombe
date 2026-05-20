@@ -1,9 +1,10 @@
 import React from 'react';
 
 import {contactEmail, contactName, contactPhone, contactPhoneRaw } from '../../cms/data';
+import ExternalArrow from '../components/ExternalArrow';
 import Layout from '../components/Layout';
 import ListItems from '../components/ListItems';
-import { PAGES } from '../constants';
+import { PAGES, FORM_LINKS } from '../constants';
 
 const C = () => {
   return (
@@ -93,13 +94,13 @@ const C = () => {
                   <span>
                     Fill out and submit the{' '}
                     <a
-                      href="https://form.jotform.com/240245791153050"
+                      href={FORM_LINKS.storefront}
                       target="_blank"
                       rel="noreferrer"
                     >
-                      Downtown Storefront Enhancement Program
+                      Downtown Storefront Enhancement Program Application <ExternalArrow />
                     </a>{' '}
-                    Application. <b>The deadline for submissions is the last day of April every year.</b>
+                    (<b>the deadline for submissions is the last day of April every year.</b>)
                   </span>
                 </>,
                 'Include the land title certificate. If the applicant is not the owner, please ensure the property owner authorization portion of the application form is completed.',

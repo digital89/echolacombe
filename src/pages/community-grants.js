@@ -4,9 +4,7 @@ import { contactEmail, contactName } from '../../cms/data';
 import ExternalArrow from '../components/ExternalArrow';
 import Layout from '../components/Layout';
 import ListItems from '../components/ListItems';
-import { PAGES } from '../constants';
-
-const FORM_LINK = 'https://forms.gle/S5YzWYH4HbGTv9RH6';
+import { PAGES, FORM_LINKS } from '../constants';
 
 const C = () => {
   return (
@@ -32,7 +30,7 @@ const C = () => {
             </p>
             <p>
               <a
-                href={FORM_LINK}
+                href={FORM_LINKS.community}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -117,7 +115,7 @@ const C = () => {
             <p>
               You are invited to submit your proposals{' '}
               <a
-                href={FORM_LINK}
+                href={FORM_LINKS.community}
                 target="_blank"
                 rel="noreferrer"
               >

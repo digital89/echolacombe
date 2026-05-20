@@ -1,8 +1,9 @@
 import React from 'react';
 
 import { contactEmail, contactPhone, contactPhoneRaw } from '../../cms/data';
+import ExternalArrow from '../components/ExternalArrow';
 import Layout from '../components/Layout';
-import { PAGES } from '../constants';
+import { PAGES, FORM_LINKS } from '../constants';
 
 const C = () => {
   return (
@@ -17,11 +18,19 @@ const C = () => {
                 our vision and principles.
               </span>{' '}
               <span>
-                If you have an opportunity you'd like to make us aware of, please contact us at
-              </span>{' '}
-              <a href={`mailto:${contactEmail}`}>{contactEmail}</a>
-              <span> or </span>
-              <a href={`tel:${contactPhoneRaw}`}>{contactPhone}</a>.
+                If you have an opportunity you'd like to make us aware of, please fill out the form below.
+              </span>
+            </p>
+            <p>
+              <a
+                href={FORM_LINKS.sponsorship}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="button is-info is-large">
+                  Apply Here! <ExternalArrow />
+                </button>
+              </a>
             </p>
             <p>
               <img src="/images/arena-ice-sponsor.jpg" alt="Arena Ice Sponsor" />

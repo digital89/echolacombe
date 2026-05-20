@@ -63,3 +63,9 @@ export const PAGES = {
     },
   },
 };
+
+export const FORM_LINKS = {
+  community: 'https://forms.gle/cVxt2wT8oJrjbaGp8',
+  sponsorship: 'https://forms.gle/6RLi1kEL8DHJiDqy5',
+  storefront: 'https://forms.gle/H27tpDJtiLkKoxzP6',
+}

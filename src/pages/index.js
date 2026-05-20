@@ -103,13 +103,13 @@ const C = () => {
                         Looking for <u>sponsorship?</u>
                       </h4>
                       <p>
-                        Echo Lacombe looks to support local events, groups and facilities that align
+                        Echo Lacombe looks to support local events, groups, and facilities that align
                         with our vision and principles.
                       </p>
                       <p>
                         <Link to={`/${PAGES.business.sponsorship.slug}`}>
                           <button className="button is-success">
-                            Inquire about Sponsorship <ExternalArrow />
+                            Apply for a Sponsorship <ExternalArrow />
                           </button>
                         </Link>
                       </p>
