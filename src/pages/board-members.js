@@ -61,6 +61,11 @@ const C = () => {
                 <span> - </span>
                 <a href="mailto:tyler@echolacombe.ca">tyler@echolacombe.ca</a>
               </li>
+              <li>
+                <span>Christina Sturgeon (Administrator)</span>
+                <span> - </span>
+                <a href="mailto:christina@echolacombe.ca">christina@echolacombe.ca</a>
+              </li>
             </ul>
           </div>
         </section>

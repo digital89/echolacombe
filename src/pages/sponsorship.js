@@ -23,7 +23,7 @@ const C = () => {
             </p>
             <p>
               <a
-                href={FORM_LINKS.sponsorship}
+                href={FORM_LINKS.community}
                 target="_blank"
                 rel="noreferrer"
               >
